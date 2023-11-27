@@ -1,8 +1,8 @@
 Project: Website Food
 
-mentor: Ngo Van Phat
+Mentor: Ngo Van Phat
 
-member:
+Member:
 
 Ngo Dinh Dat
 
