@@ -1,0 +1,301 @@
+/* Reset some default styles */
+
+body {
+    background-color: #93c2c7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styling */
+
+header,
+footer {
+    background-color: #b6cccd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/* main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+} */
+
+.products,
+.cart {
+    flex-basis: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #B8D3D5;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5defff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul div li a:hover {
+    color: #f0f0f0;
+}
+
+nav ul div li {
+    justify-content: space-around;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/*  */
+
+
+/* Kiểu cho phần menu trang chủ */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Canh chỉnh các cột */
+    max-width: 800px;
+    /* Điều chỉnh chiều rộng tối đa của phần main */
+    margin: 0 auto;
+    /* Để căn giữa phần main */
+    padding: 20px;
+    /* Thêm padding để tạo khoảng cách với nội dung */
+}
+
+.menu {
+    display: flex;
+    flex-basis: 100%;
+    /* Để menu nằm ngang toàn bộ */
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 3px;
+    flex-basis: calc(33.33% - 50px);
+    /* 33.33% là chiều rộng 1 ô, 40px là khoảng cách */
+    box-sizing: border-box;
+    /* Để padding không làm tăng chiều rộng */
+    transition: background-color 0.3s ease;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+
+/* Điều chỉnh cột cho màn hình nhỏ hơn */
+
+@media (max-width: 768px) {
+    .menu a {
+        flex-basis: calc(50% - 30px);
+        /* Chiếm 50% chiều rộng của mỗi cột */
+    }
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* danh gia phan hoi */
+
+
+/* Reset some default styles */
+
+body {
+    background-color: #93c2c7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header styling */
+
+header {
+    background-color: #b6cccd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul div li a:hover {
+    color: #f0f0f0;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/* Main styling */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 3px;
+    flex-basis: calc(33.33% - 50px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #5defff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+
+/* Footer styling */
+
+footer {
+    padding: 1px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b6cccd;
+    color: #fff;
+}
+
+
+/* Kiểu cho phần main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b6cccd;
+    color: black;
+}
+
+.customer-review {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-review h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+    font-weight: bold;
+}

@@ -1,0 +1,1187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+
+
+/* CSS NAV */
+
+.nav-main {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    background: #4e3115;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+/* nav-1 start */
+
+.nav-1 img {
+    height: 70px;
+}
+
+
+/* nav-1 end */
+
+
+/* nav-2 start */
+
+.nav-2 {
+    /* justify-content: center; */
+    display: flex;
+}
+
+.nav-2>ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-2>ul>li {
+    padding: 28px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.nav-2 ul li:hover>.menu-con-1 {
+    display: block;
+}
+
+.nav-2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+.nav-2 ul li a:hover {
+    color: #d69c52;
+}
+
+.menu-con-1 {
+    position: absolute;
+    background-color: #4e3115;
+    padding: 15px 0px;
+    list-style: none;
+    /* bỏ dấu đầu dòng */
+    width: 200px;
+    display: none;
+    margin-top: 26px;
+}
+
+.menu-con-1 li {
+    padding: 5px 20px;
+}
+
+.menu-con-1>li>a {
+    border-bottom: 1px solid #555555;
+    padding: 8px 15px;
+}
+
+.menu-con-1>li:hover a {
+    border-bottom: 1px solid #898989;
+}
+
+.menu-con-1>li:last-child a {
+    border: none;
+}
+
+
+/* nav-2 end */
+
+
+/* nav-3 start */
+
+.nav-3 {
+    display: flex;
+}
+
+.nav-3 svg {
+    margin: 0 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.nav-3>svg:hover>path {
+    fill: #d69c52;
+}
+
+.nav-3 .div-card,
+.nav-3 .div-search,
+.nav-3 .div-user {
+    padding: 20px 0px;
+    cursor: pointer;
+    /* di chuyển đến con trỏ thay đổi  */
+}
+
+
+/* nav-3 login  start*/
+
+.nav-3 .div-user {
+    position: relative;
+    /* điều chỉnh phần tử mà không ảnh hưởng đến phần tử xug quanh */
+}
+
+.nav-3 .div-user:hover .menu-con-login,
+.nav-3 .div-user svg:hover .menu-con-login {
+    display: block;
+    /* cách mà phần tử hiển thị nội dung:  phần tử hiển thị dưới dạng khối */
+}
+
+.menu-con-login {
+    margin-top: 20px;
+    list-style: none;
+    border: 1px solid #efefef;
+    background: #fff;
+    width: auto;
+    min-width: 196px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+    right: 15px;
+    position: absolute;
+    display: none;
+    /* đặt vị trí của một phần tử dựa trên phần tử cha gần nhất có thuộc tính position không phải là static. */
+}
+
+.menu-con-login>li {
+    padding: 10px 0px;
+}
+
+.menu-con-login>li:hover>a {
+    background: #783a09;
+}
+
+.menu-con-login>li>a {
+    text-decoration: none;
+    /* loại bỏ gạch chân dưới  */
+    color: #fff;
+    background: #a74900;
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    /* bo viền */
+    width: 236px;
+    height: 41px;
+    line-height: 41px;
+    /* khoảng cách giữa các dòng */
+    align-items: center;
+    /* căn giữa  */
+    justify-content: center;
+    /* căn chỉnh theo bề ngang */
+}
+
+
+/* nav-3 login end*/
+
+
+/* nav-3 search  start*/
+
+.div-search {
+    position: relative;
+}
+
+.nav-3 .div-search:hover .search-content,
+.nav-3 .div-search svg:hover .search-content {
+    display: block;
+}
+
+.search-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 19px;
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.search-content>hr {
+    opacity: 0.2;
+}
+
+.search-content>p,
+.search-content-1 {
+    margin: 10px 0px;
+}
+
+.search-content-1 {
+    border: 1px solid #a74900;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.search-content-1>form>input {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.search-content-1>form>input:focus {
+    outline: none;
+}
+
+.search-content-1>form svg {
+    height: 20px;
+    width: 20px;
+}
+
+.form-menu-2 {
+    display: flex;
+}
+
+.btn-search-menu-2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+
+/* nav-3 search end*/
+
+
+/* nav-3 end */
+
+
+/* CSS NAV END*/
+
+
+/* CSS HOME */
+
+.banner-home img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    object-fit: cover;
+    height: 450px;
+}
+
+
+/* Danh mÃƒÂ¡Ã‚Â»Ã‚Â¥c start */
+
+.nd-chinh-home {
+    background: #3D2B1F;
+    display: flex;
+    padding: 80px 0px;
+}
+
+.nd-chinh-1-home {
+    margin-left: 50px;
+    width: 30%;
+}
+
+.nd-chinh-1-home>.danh-muc {
+    border-radius: 5px;
+    border: 1px solid #a74900;
+    width: 300px;
+}
+
+.nd-chinh-1-home .danh-muc .tieu-de {
+    padding: 20px;
+    background-color: #a74900;
+    border-radius: 5px;
+}
+
+.nd-chinh-1-home .danh-muc .tieu-de h3 {
+    color: #fff;
+}
+
+.nd-chinh-1-home .danh-muc .nd ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nd-chinh-1-home .danh-muc .nd ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nd-chinh-1-home .danh-muc .nd ul li a:hover {
+    color: #d69c52;
+}
+
+.nd-chinh-1-home .danh-muc:last-child {
+    margin-top: 50px;
+}
+
+.sp-ban-chay {
+    display: flex;
+    align-items: center;
+}
+
+.sp-ban-chay img {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.sp-ban-chay a {
+    padding-left: 10px;
+}
+
+
+/* Danh mÃƒÂ¡Ã‚Â»Ã‚Â¥c end */
+
+
+/* nd-chinh-home start*/
+
+.nd-chinh-2-home {
+    width: 70%;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.nd-chinh-2-home h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+}
+
+.nd-chinh-2-home h2::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/yyy.webp);
+    width: 45px;
+    height: 43px;
+    top: 50%;
+    right: 78%;
+    transform: translateY(-50%);
+    background-size: cover;
+}
+
+.nd-chinh-2-home h2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/yyy.webp);
+    width: 45px;
+    height: 43px;
+    top: 50%;
+    left: 78%;
+    transform: translateY(-50%) rotateY(-180deg);
+    background-size: cover;
+}
+
+.card-sp-ngang {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.the-sp {
+    width: 270px;
+    background-color: #181a1b;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.the-sp a {
+    text-decoration: none;
+}
+
+.the-sp img {
+    height: 210px;
+    width: 230px;
+    object-fit: cover;
+    transition: all 0.8s;
+    border-radius: 20px;
+}
+
+.the-sp img:hover {
+    transform: translateY(-20px) scale(1.1);
+}
+
+.the-sp h3,
+.the-sp p {
+    margin: 20px 0px;
+}
+
+.the-sp p {
+    font-size: 20px;
+    color: #d83a3a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.the-sp h3 {
+    color: #d5d1cc;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.the-sp h3:hover {
+    color: #d69c52;
+}
+
+.the-sp button {
+    margin-bottom: 10px;
+    padding: 8px 20px;
+    border-radius: 9px;
+    border: none;
+    background-color: #a74900;
+}
+
+.the-sp button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.the-sp button:hover {
+    background-color: #783a09;
+}
+
+
+/* banner-2 start*/
+
+.banner-home-2 img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+
+/* banner-2 end*/
+
+
+/* nd-chinh-home end*/
+
+
+/* END CSS HOME */
+
+
+/* START CSS FOOTER */
+
+.footer-dau {
+    background-color: #4e3115;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.content-1-footer {
+    padding-top: 30px;
+    color: #fff;
+}
+
+.content-1-footer h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.img-lh {
+    margin-top: 20px;
+}
+
+.content-1-footer ul {
+    list-style: none;
+}
+
+.content-1-footer li {
+    display: list-item;
+    margin: 10px 0px;
+}
+
+.content-1-footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.img-nn>img,
+.img-lh>a>img {
+    height: 42px;
+}
+
+.footer-end {
+    text-align: center;
+    background-color: #371e05;
+    padding: 10px 0px;
+}
+
+.footer-end p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* END CSS FOOTER */
+
+
+/* START CSS LOGIN */
+
+.login-dang-nhap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #3D2B1F;
+    height: 600px;
+}
+
+.login-chinh {
+    background-color: rgba(255, 255, 255, 0.06);
+    width: 600px;
+    border-radius: 5px;
+    padding: 25px;
+    color: #fff;
+}
+
+.content-1-login {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.content-1-login ul {
+    list-style: none;
+    display: flex;
+}
+
+.content-1-login ul li {
+    width: 250px;
+}
+
+.content-1-login ul li:last-child a {
+    color: #fff;
+}
+
+.content-1-login ul li:last-child a:hover {
+    color: #d69c52;
+}
+
+.content-1-login ul li hr {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-1-login ul li a {
+    text-decoration: none;
+    color: #d69c52;
+}
+
+.content-1-login h1 {
+    padding: 20px 0px;
+}
+
+.form-login {
+    margin-top: 20px;
+}
+
+.form-login .ipt-login {
+    margin: 20px 0px;
+}
+
+.form-login .ipt-login input {
+    padding: 5px 0px 5px 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+}
+
+.form-login .ipt-login input:focus {
+    outline: none;
+}
+
+.form-login .dang-nhap {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+.form-login .dang-nhap[value] {
+    font-size: 16px;
+}
+
+.form-login .dang-nhap:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+.login-dang-nhap p {
+    margin: 20px 0px;
+}
+
+.login-dang-nhap p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-dang-nhap p a:hover {
+    color: #d69c52;
+}
+
+
+/* LÃƒÂ¡Ã‚ÂºÃ‚Â¥y lÃƒÂ¡Ã‚ÂºÃ‚Â¡i mk */
+
+.form-login .lay-lai-mat-khau {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+.form-login .lay-lai-mat-khau[value] {
+    font-size: 16px;
+}
+
+.form-login .lay-lai-mat-khau:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+
+/* ÃƒÂ¡Ã‚ÂºÃ‚Â©n hiÃƒÂ¡Ã‚Â»Ã¢â‚¬Â¡n lÃƒÂ¡Ã‚ÂºÃ‚Â¥y lÃƒÂ¡Ã‚ÂºÃ‚Â¡i mk */
+
+.lay-lai-mk-chinh {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+
+/* END CSS LOGIN */
+
+
+/* START CSS Ãƒâ€žÃ‚ÂÃƒâ€žÃ¢â‚¬Å¡NG KÃƒÆ’Ã‚Â */
+
+#dk-login-k {
+    text-decoration: none;
+    color: #d69c52;
+}
+
+#dn-login-k {
+    color: #fff;
+}
+
+#dn-login-k:hover {
+    color: #d69c52;
+}
+
+.form-login .dang-ky {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+.form-login .dang-ky[value] {
+    font-size: 16px;
+}
+
+.form-login .dang-ky:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+
+/* END CSS Ãƒâ€žÃ‚ÂÃƒâ€žÃ¢â‚¬Å¡NG KÃƒÆ’Ã‚Â */
+
+
+/* START CSS CHI TIÃƒÂ¡Ã‚ÂºÃ‚Â¾T SÃƒÂ¡Ã‚ÂºÃ‚Â¢N PHÃƒÂ¡Ã‚ÂºÃ‚Â¨M */
+
+.chi-tiet-san-pham {
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+
+.img-san-pham-chi-tiet img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.nd-san-pham-chi-tiet h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0px 0px 5px;
+    line-height: 48px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.nd-san-pham-chi-tiet p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d83a3a;
+    display: block;
+    margin: 10px 0px;
+}
+
+.nd-san-pham-chi-tiet h4 {
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0px 30px;
+    padding: 0px 30px;
+    text-align: left;
+}
+
+.hd-chi-tiet-san-pham .them-gio-hang,
+.hd-chi-tiet-san-pham .mua-ngay-ct {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+    margin: 0px 20px;
+}
+
+.hd-chi-tiet-san-pham .them-gio-hang[value],
+.hd-chi-tiet-san-pham .mua-ngay-ct[value] {
+    font-size: 16px;
+}
+
+.hd-chi-tiet-san-pham .them-gio-hang:hover,
+.hd-chi-tiet-san-pham .mua-ngay-ct:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+.binh-luan-ct,
+.san-pham-cung-loai-ct {
+    background-color: #3D2B1F;
+    padding-bottom: 30px;
+}
+
+.nd-ct-end {
+    background: #a74900;
+    padding: 10px;
+    color: #fff;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.cmt {
+    text-align: center;
+}
+
+.cmt input {
+    padding: 10px 20px;
+}
+
+.form-gui-cmt {
+    display: flex;
+    justify-content: center;
+}
+
+.form-gui-cmt input {
+    margin-left: 20px;
+}
+
+#input-nd {
+    padding: 5px 0px 5px 15px;
+    width: 350px;
+    /* dộ rộng phần tử */
+    height: 40px;
+    /* độ cao phần tử */
+    border-radius: 5px;
+    tạo hiệu ứng border: 0;
+    border-bottom: 2px solid #d69c52;
+}
+
+.bl-ct {
+    padding: 20px;
+    background: #3D2B1F;
+    min-height: 130px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.bl-ct-1 ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bl-ct-1 ul li {
+    padding: 10px 20px;
+    background-color: #EEEE;
+    border-bottom: 1px #ccc solid;
+}
+
+.bl-ct-1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bl-ct-1 ul li:hover {
+    background-color: #CCC;
+}
+
+.binhluan td {
+    padding-left: 30px;
+}
+
+#guibl {
+    padding: 8px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+#guibl:hover {
+    padding: 8px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #783a09;
+    color: #fff;
+    border: 0;
+}
+
+#noguibl {
+    padding: 10px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+#noguibl:hover {
+    padding: 10px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #783a09;
+    color: #fff;
+    border: 0;
+}
+
+.nd-ct-spcl {
+    min-height: 200px;
+    padding: 20px;
+}
+
+.nd-ct-spcl li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.nd-ct-spcl li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nd-ct-spcl li a:hover {
+    color: #d69c52;
+}
+
+
+/* END CSS CHI TIÃƒÂ¡Ã‚ÂºÃ‚Â¾T SÃƒÂ¡Ã‚ÂºÃ‚Â¢N PHÃƒÂ¡Ã‚ÂºÃ‚Â¨M */
+
+
+/* START CSS DANH SÃƒÆ’Ã‚ÂCH SÃƒÂ¡Ã‚ÂºÃ‚Â¢N PHÃƒÂ¡Ã‚ÂºÃ‚Â¨M */
+
+.bg-list-sp {
+    background-color: #3D2B1F;
+}
+
+.container-dssp {
+    width: 80%;
+    margin: auto;
+}
+
+.search-list-ds {
+    margin: 20px 20px 20px 0px;
+    padding: 5px 0px 5px 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+}
+
+.sel-search-listsp {
+    padding: 5px 0px 5px 15px;
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+    margin-right: 20px;
+}
+
+.loc-sp-list {
+    margin: 20px 0px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a74900;
+    color: #fff;
+}
+
+.loc-sp-list:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+.bang-dssp {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tieu-de-ds {
+    text-align: center;
+}
+
+.tieu-de-ds h1 {
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.container-dssp table {
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.hien-thi-dssp th,
+.hien-thi-dssp td {
+    padding: 10px;
+    border: 1px solid #939393;
+}
+
+.hien-thi-dssp th {
+    background: #a74900;
+    border: 2px solid #939393;
+    color: #fff;
+}
+
+.hd-all-ds {
+    padding: 30px 0px;
+}
+
+.hien-thi-dssp td input,
+.hd-all-ds .btn-ctc,
+.hd-all-ds .btn-bctc,
+.hd-all-ds .btn-them-ds {
+    padding: 8px 15px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    background-color: #a74900;
+    color: #fff;
+    border: 0;
+}
+
+.hien-thi-dssp td input:hover,
+.hd-all-ds .btn-ctc:hover,
+.hd-all-ds .btn-bctc:hover,
+.hd-all-ds .btn-them-ds:hover {
+    background-color: #783a09;
+    cursor: pointer;
+}
+
+.hd-all-ds .btn-ctc {
+    margin-left: 0px;
+}
+
+
+/* END CSS DANH SÃƒÆ’Ã‚ÂCH SÃƒÂ¡Ã‚ÂºÃ‚Â¢N PHÃƒÂ¡Ã‚ÂºÃ‚Â¨M */
+
+
+/* START CSS ADD sp */
+
+.them-sp-container {
+    width: 100%;
+    background-color: #3D2B1F;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+.nd-main-them-sp {
+    text-align: center;
+}
+
+.cn-them-sp {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.danh-muc-themsp label,
+.search-themsp label,
+.gia-sp-themsp label,
+.anh-sp-themsp label,
+.mota-themsp label {
+    display: flex;
+    justify-content: start;
+    margin: 20px 0px 20px 530px;
+}
+
+.danh-muc-themsp option {
+    border-bottom: 2px solid #d69c52;
+    padding: 10px;
+}
+
+.danh-muc-themsp select {
+    padding: 5px 0px 5px 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+}
+
+.search-themsp input,
+.gia-sp-themsp input {
+    padding: 5px 0px 5px 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+}
+
+.mota-themsp textarea {
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #d69c52;
+    padding: 5px 15px;
+}
+
+.hanh-dong-themsp input {
+    margin: 20px 0px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a74900;
+    color: #fff;
+}
+
+.hanh-dong-themsp input:hover {
+    background-color: #783a09;
+}
+
+
+/* BiÃƒÂ¡Ã‚Â»Ã†â€™u Ãƒâ€žÃ¢â‚¬ËœÃƒÂ¡Ã‚Â»Ã¢â‚¬Å“ */
+
+.tieu-de-bieu-do {
+    text-align: center;
+}
+
+.tieu-de-bieu-do h1 {
+    color: #000;
+    padding: 20px 0px;
+}
+
+.giohang {
+    color: rgb(212, 62, 7);
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 150px;
+    padding-right: 20px;
+    border-right: 3px solid;
+}
+
+.giohang:hover {
+    color: rgb(237, 107, 60);
+}
+
+.ti-shopping-cart {
+    text-decoration: none;
+    font-size: 35px;
+    padding-left: 15px;
+    color: rgb(212, 62, 7);
+}
+
+.ti-shopping-cart:hover {
+    color: rgb(237, 107, 60);
+}
+
+.sanpham {
+    margin: 0 0 0 150px;
+    color: #fff;
+}
+
+.ship {
+    margin: 20px 0 -20px 0;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    color: #abb2bf;
+}
+
+.freeship {
+    margin-left: 150px;
+    width: 30px;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+th {
+    padding: 8px 20px;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sanpham .hanhdong {
+    background-color: rgb(212, 62, 7);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sanpham .hanhdong:hover {
+    background-color: rgb(237, 107, 60);
+}
+
+.thanhtoan {
+    text-decoration: none;
+    background-color: rgb(212, 62, 7);
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.thanhtoan:hover {
+    background-color: rgb(237, 107, 60);
+}
+
+.ti-angle-up {
+    color: #fff;
+}

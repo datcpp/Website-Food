@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-main">
+                <div class="nav-1">
+                    <a href="home.html">
+                        <img src="/img/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="nav-2">
+                    <ul>
+                        <li>
+                            <a href="home.html"> Trang Chủ </a>
+                        </li>
+                        <li>
+                            <a href="danhmuc.html"> Sản Phẩm </a>
+                            <ul class="menu-con-1">
+                                <li><a href="bunbo.html">Món Chính</a></li>
+                                <li><a href="bunbo.html">Mì</a></li>
+                                <li><a href="comsuon.html">Cháo</a></li>
+                                <li><a href="danhmuc.html">Đồ Uống</a></li>
+                                <li><a href="comduiga.html">Cơm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="lienhe.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-3">
+                    <div class="div-search">
+                        <svg class="search-timkiem" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.1404 13.4673L19.852 19.1789C20.3008 19.6276 19.6276 20.3008 19.1789 19.852L13.4673 14.1404C12.0381 15.4114 10.1552 16.1835 8.09176 16.1835C3.6225 16.1835 0 12.5613 0 8.09176C0 3.6225 3.62219 0 8.09176 0C12.561 0 16.1835 3.62219 16.1835 8.09176C16.1835 10.1551 15.4115 12.038 14.1404 13.4673ZM0.951972 8.09176C0.951972 12.0356 4.14824 15.2316 8.09176 15.2316C12.0356 15.2316 15.2316 12.0353 15.2316 8.09176C15.2316 4.14797 12.0353 0.951972 8.09176 0.951972C4.14797 0.951972 0.951972 4.14824 0.951972 8.09176Z"
+                    fill="white"
+                  ></path>
+                </svg>
+                        <div class="search-content">
+                            <p>Tìm Kiếm món ăn của bạn</p>
+                            <hr />
+                            <div class="search-content-1">
+                                <input type="search" placeholder="Nhập tên món ăn..." />
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.1404 13.4673L19.852 19.1789C20.3008 19.6276 19.6276 20.3008 19.1789 19.852L13.4673 14.1404C12.0381 15.4114 10.1552 16.1835 8.09176 16.1835C3.6225 16.1835 0 12.5613 0 8.09176C0 3.6225 3.62219 0 8.09176 0C12.561 0 16.1835 3.62219 16.1835 8.09176C16.1835 10.1551 15.4115 12.038 14.1404 13.4673ZM0.951972 8.09176C0.951972 12.0356 4.14824 15.2316 8.09176 15.2316C12.0356 15.2316 15.2316 12.0353 15.2316 8.09176C15.2316 4.14797 12.0353 0.951972 8.09176 0.951972C4.14797 0.951972 0.951972 4.14824 0.951972 8.09176Z"
+                        fill="#222222"
+                      ></path>
+                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="giohang.html">
+                        <div class="div-card">
+                            <svg viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.47253 20.4219C6.94111 20.4219 5.69971 21.6707 5.69971 23.211C5.69971 24.7513 6.94117 26 8.47253 26C10.004 26 11.2454 24.7513 11.2454 23.211C11.2454 21.6707 10.004 20.4219 8.47253 20.4219ZM8.47253 24.7605C7.62176 24.7605 6.93209 24.0668 6.93209 23.211C6.93209 22.3553 7.62176 21.6616 8.47253 21.6616C9.32331 21.6616 10.013 22.3553 10.013 23.211C10.013 24.0668 9.32331 24.7605 8.47253 24.7605Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M20.1801 20.4219C18.6486 20.4219 17.4072 21.6707 17.4072 23.211C17.4072 24.7513 18.6487 26 20.1801 26C21.7114 26 22.9529 24.7513 22.9529 23.211C22.9529 21.6707 21.7115 20.4219 20.1801 20.4219ZM20.1801 24.7605C19.3293 24.7605 18.6396 24.0668 18.6396 23.211C18.6396 22.3553 19.3293 21.6616 20.1801 21.6616C21.0308 21.6616 21.7205 22.3553 21.7205 23.211C21.7206 24.0668 21.0308 24.7605 20.1801 24.7605Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M26.4343 4.15262C26.306 4.01162 26.1304 3.92336 25.9413 3.90468L5.88457 3.62578L5.33001 1.92135C4.93933 0.781956 3.87856 0.0127528 2.6804 0H0.616185C0.275865 0 0 0.277478 0 0.619787C0 0.962097 0.275865 1.23957 0.616185 1.23957H2.6804C3.35036 1.25446 3.94031 1.68717 4.15926 2.32422L8.07203 14.1931L7.76397 14.9059C7.42035 15.7971 7.52354 16.8003 8.04125 17.6019C8.554 18.3893 9.41662 18.8752 10.352 18.9035H22.3368C22.6771 18.9035 22.9529 18.626 22.9529 18.2837C22.9529 17.9414 22.6771 17.6639 22.3368 17.6639H10.3519C9.8237 17.6506 9.33748 17.3711 9.0579 16.9202C8.78145 16.4747 8.72466 15.9259 8.90387 15.4326L9.15037 14.8748L22.121 13.5113C23.5458 13.3535 24.7178 12.3112 25.0479 10.9082L26.5268 4.67934C26.5934 4.49997 26.5581 4.29824 26.4343 4.15262ZM23.8463 10.6293C23.6463 11.5325 22.884 12.1986 21.967 12.2718L9.15037 13.6043L6.2851 4.86535L25.1711 5.14425L23.8463 10.6293Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                        </div>
+                    </a>
+                    <div class="div-user">
+                        <svg viewBox="0 0 512 512">
+                  <path
+                    d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"
+                    data-original="#222222"
+                    class="active-path"
+                    fill="white"
+                  ></path>
+                </svg>
+                        <ul class="menu-con-login">
+                            <li>
+                                <a href="login.html" title="Đăng nhập">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="dangky.html" title="Đăng ký">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="banner-home">
+                <img src="img/baner1.jpg" alt="" />
+            </div>
+            <div class="nd-chinh-home">
+                <div class="nd-chinh-1-home">
+                    <div class="danh-muc">
+                        <div class="tieu-de">
+                            <h3>DANH MỤC</h3>
+                        </div>
+                        <div class="nd">
+                            <ul>
+                                <li><a href="danhmuc.html">Món Chính </a></li>
+                                <li><a href="danhmuc.html">Mì </a></li>
+                                <li><a href="danhmuc.html">Cháo </a></li>
+                                <li><a href="danhmuc.html">Đồ Uống </a></li>
+                                <li><a href="danhmuc.html">Cơm </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="danh-muc">
+                        <div class="tieu-de">
+                            <h3>SẢN PHẨM BÁN CHẠY</h3>
+                        </div>
+                        <div class="nd">
+                            <ul>
+                                <li class="sp-ban-chay">
+                                    <a href="goitaiheo.html"><img src="upload/untitled114148eed72724d16a9d2c.webp" alt="" /></a>
+                                    <a href="goitaiheo.html">Gỏi tai heo hoa chuối</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="gacuonladua.html"><img src="upload/2-2.webp" alt="" /></a>
+                                    <a href="gacuonladua.html">Gà cuốn lá dứa</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="ucgadutlo.html"><img src="upload/1-2.webp" alt="" /></a>
+                                    <a href="ucgadutlo.html">Ức gà đút lò phủ lá chanh</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="baroinuong.html"><img src="upload/1240f05c5ee174bcdaf47d5ec33197.webp" alt="" /></a>
+                                    <a href="baroinuong.html"> Ba rọi nướng riềng mẻ</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="canhmuop.html"><img src="upload/untitled19295a1b9ecd041238d6bd.webp" alt="" /></a>
+                                    <a href="canhmuop.html">Canh mướp hương nhồi thịt</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="comchacua.html"><img src="upload/1cdb6151948324e7bb3b83f1b9f4cb.webp" alt="" /></a>
+                                    <a href="comchacua.html">Cơm chả cua hoàng kim</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="comduiga.html"><img src="upload/15b3ba303f9e14fc3a7300b794fb22.webp" alt="" /></a>
+                                    <a href="comduiga.html">Cơm đùi gà chiên giòn</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="comsuon.html"><img src="upload/1c912144730d24f13a35a91aa71c3c.webp" alt="" /></a>
+                                    <a href="comsuon.html">Cơm sườn</a>
+                                </li>
+                                <li class="sp-ban-chay">
+                                    <a href="bunbo.html"><img src="upload/12544e4d15a994948a261d455eee51.webp" alt="" /></a>
+                                    <a href="bunbo.html">Bún bò</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nd-chinh-2-home">
+                    <h2>Chi tiết sản phẩm</h2>
+                    <div class="chi-tiet-san-pham">
+                        <div class="img-san-pham-chi-tiet">
+                            <img src="upload/untitled19295a1b9ecd041238d6bd.webp" alt="" /> </div>
+                        <div class="nd-san-pham-chi-tiet">
+                            <h3>Canh mướp hương nhồi thịt</h3>
+                            <p>120,000₫</p>
+                            <h4>Canh mướp hương nhồi thịt được xử lý đầy tinh tế mang đến vị ngọt thanh và hương thơm thoang thoảng kích thích vị giác. Mướp hương vốn là loại quả quen thuộc được nhiều người ưa thích có vị ngọt, tính mát cùng nhiều dưỡng chất
+                                tốt cho sức khỏe. Đặc biệt kết hợp với phần nhân làm từ tôm bạc thẻ, thịt heo xay, giò sống heo giúp tăng thêm vị đậm đà, sự dai giòn ấn tượng. Đi cùng vị ngọt thuần chất của các loại củ như su hào, bắp mỹ trái, hành baro,
+                                củ sắn...chắc chắn sẽ mang đến trải nghiệm khó quên. Thành phần : Tôm bạc thẻ, giò sống, cá thát lát, ba chỉ heo xay, mướp hương, ngò rí, hành lá, tỏi củ, hành tím, ớt sừng, bắp mỹ, củ su hào, củ sắn nước, xương gà, đậu
+                                hũ non Khẩu phần: 1 người Thời gian hoàn tất : 10 phút</h4>
+                            <div class="hd-chi-tiet-san-pham">
+                                <input type="button" value="THÊM VÀO GIỎ HÀNG" class="them-gio-hang" />
+                                <input type="button" value="MUA NGAY" class="mua-ngay-ct" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="binh-luan-ct">
+                <div class="nd-ct-end">BÌNH LUẬN</div>
+                <div class="bl-ct bl-ct-1 binhluan">
+                    <table>
+                    </table>
+                </div>
+                <div class="cmt">
+                    <input type="hidden" name="idpro" value="32" />
+                    <input type="text" name="noidung" id="input-nd" />
+                    <a href=""><input type="button" value="Gửi bình luận" id="noguibl" /></a>
+                </div>
+            </div>
+
+            <div class="san-pham-cung-loai-ct">
+                <div class="nd-ct-end">SẢN PHẨM CÙNG LOẠI</div>
+                <div class="nd-ct-spcl">
+                    <li>
+                        <a href="goitaiheo.html">
+                        Gỏi tai heo hoa chuối </a>
+                    </li>
+                    <li>
+                        <a href="gacuonladua.html">
+                        Gà cuốn lá dứa </a>
+                    </li>
+                    <li>
+                        <a href="ucgadutlo.html">
+                        Ức gà đút lò phủ lá chanh </a>
+                    </li>
+                    <li>
+                        <a href="baroinuong.html">
+                         Ba rọi nướng riềng mẻ    </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-dau">
+            <div class="content-1-footer">
+                <h3>Tìm Hiểu</h3>
+                <br />
+                <ul>
+                    <li><a href="#">Lịch Sử</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Xuất Xứ</a></li>
+                    <li><a href="#">Nhà Cung Cấp</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                </ul>
+            </div>
+            <div class="content-1-footer">
+                <h3>Cơ Hội Nghề Nghiệp</h3>
+                <br />
+                <ul>
+                    <li><a href="#">Thông Tin Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="content-1-footer">
+                <h3>Chính Sách</h3>
+                <br />
+                <ul>
+                    <li><a href="#">Các Câu Hỏi Thường Gặp</a></li>
+                    <li><a href="#">Điều Khoản Và Điều Kiện</a></li>
+                    <li><a href="#">Chính Sách Về Quyền Riêng Tư</a></li>
+                </ul>
+                <br />
+                <h3>Ngôn Ngữ</h3>
+                <div class="img-nn">
+                    <img src="img/vietnam.png" alt="" />
+                    <img src="img/united-states.png" alt="" />
+                </div>
+            </div>
+            <div class="content-1-footer">
+                <h3>Liên Hệ Với Chúng Tôi</h3>
+                <br />
+                <ul>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Phản Hồi Chất Lượng Dịch Vụ</a></li>
+                </ul>
+                <div class="img-lh">
+                    <a href="https://www.facebook.com/profile.php?id=100027237414050"><img src="/img/facebook.png" alt="facebook" /></a>
+                    <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1"><img src="/img/instagram.png" alt="instagram" /></a>
+                    <a href="https://www.youtube.com/channel/UCEODmjhchAirxOC-E_2Ln4g"><img src="/img/youtube.png" alt="youtube" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Bản quyền thuộc về <b>Nhóm 3 </b> - Đại Học Thủy Lợi</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+/* Reset some default styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #93c2c7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header styling */
+
+header {
+    background-color: #b6cccd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    /*loại bỏ các dấu đầu dòng mặc định*/
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+/* display inline thiết lập một phần tử HTML để hiển thị như một phần tử trên cùng một hàng với các phần tử khác, mà không tạo ra một "dòng mới" */
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* text-decoration: loại bỏ dấu gạch chân dưới */
+
+nav ul div li a:hover {
+    color: #f0f0f0;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/* margin right: căn lề phải */
+
+
+/* Main styling */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* xuống dòng khi kh đủ không gian trên 1 dòng*/
+    justify-content: space-between;
+    /* phân chia không gian giữa các thẻ*/
+    max-width: 800px;
+    /*giới hạn tối đa mà 1 phần tử có thể mở rộng */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 3px;
+    flex-basis: calc(33.33% - 50px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin-top: 70px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #6a6a6a;
+}
+
+.menu a:hover {
+    background-color: #a9a9a9;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+
+/* Footer styling */
+
+footer {
+    padding: 1px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b6cccd;
+    color: #fff;
+}
+
+
+/* Kiểu cho phần main */
+
+.customer-review {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-review h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+/* quan li uu dai */
+
+.quanli {
+    display: flex;
+    flex-direction: column;
+}
+
+.theodoi {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    height: 443px;
+    width: 400px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.chinhsuasp {
+    background-color: lightgray;
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    /* bóng đổ: ngang dọc độ_mờ kthuoc_bóng */
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.chinhsuasp:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.chinhsuasp:active {
+    /* đặt tỷ lệ thu nhỏ của phần tử xuống 95% so với kích thước gốc */
+    transform: scale(0.95);
+}
+
+.chinhsuasp:focus {
+    border: 2px solid grey;
+}
+
+.chinhsuasp::placeholder {
+    text-align: center;
+    font-size: 17px;
+}
+
+.kich-thuoc {
+    padding: 28px 0 0 0;
+}
+
+.capnhat {
+    padding: 15px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid;
+    font-size: 15px;
+    color: #333;
+    background-color: rgb(212, 216, 212);
+}
+
+.capnhat:hover {
+    background-color: #dfdddd;
+}
+
+#notification {
+    display: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.input {
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    /* bóng đổ: ngang dọc độ_mờ kthuoc_bóng */
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    /* đặt tỷ lệ thu nhỏ của phần tử xuống 95% so với kích thước gốc */
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 17px;
+}
+
+.height {
+    padding: 50px 0 0 0;
+}
+
+h4 {
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+
+h4:hover {
+    background-color: #dcdcdc;
+}
+
+.khung {
+    padding: 40px 20px 0 0;
+}
+
+.khung .box {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+}
+
+.nutcheck {
+    padding: 8px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: lightgray;
+    color: #333;
+    font-size: 18px;
+    border: 1px solid;
+}
+
+.nutcheck:hover {
+    background-color: #dcdcdc;
+}
+
+.qlykh {
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.qlyud {
+    height: 342px;
+    width: 400px;
+    background-color: #fff;
+}
+
+
+/* Thêm CSS cho khung đăng nhập */
+
+.login-container {
+    width: 300px;
+    max-width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container .input-group input {
+    width: 93%;
+    padding: 8px;
+    border-radius: 2px;
+    border: 3px solid #ccc;
+}
+
+.login-container button {
+    color: #f0f0f0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #93c2c7;
+    cursor: pointer;
+}
+
+
+/* Thay đổi kích thước và màu sắc khung đăng ký */
+
+.register-container {
+    width: 400px;
+    /* Đổi kích thước */
+    max-width: 80%;
+    /* Giữ cho khung không quá rộng */
+    margin: 50px auto;
+    padding: 100px;
+    /* Tăng padding để khung trở nên lớn hơn */
+    border-radius: 8px;
+    background-color: #fff;
+    /* Đổi màu nền thành trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+    background-color: #93c2c7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.inline-list-item {
+    display: inline-block;
+    /* Hoặc nếu muốn dùng inline:
+    display: inline;
+    */
+    margin-right: 20px;
+    /* Để tạo khoảng cách giữa các liên kết */
+    text-decoration: none;
+}
+
+.inline-list-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.inline-list-item a:hover {
+    color: #6a6a6a;
+}

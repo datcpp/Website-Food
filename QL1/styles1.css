@@ -1,0 +1,261 @@
+/* Reset some default styles */
+
+body {
+    background-color: #93c2c7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header styling */
+
+header {
+    background-color: #b6cccd;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    /*loại bỏ các dấu đầu dòng mặc định*/
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+/* display inline thiết lập một phần tử HTML để hiển thị như một phần tử trên cùng một hàng với các phần tử khác, mà không tạo ra một "dòng mới" */
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* text-decoration: loại bỏ dấu gạch chân dưới */
+
+nav ul div li a:hover {
+    color: #f0f0f0;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/* margin right: căn lề phải */
+
+
+/* Main styling */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* xuống dòng khi kh đủ không gian trên 1 dòng*/
+    justify-content: space-between;
+    /* phân chia không gian giữa các thẻ*/
+    max-width: 800px;
+    /*giới hạn tối đa mà 1 phần tử có thể mở rộng */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 3px;
+    flex-basis: calc(33.33% - 50px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #93c2c7;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+
+/* Footer styling */
+
+footer {
+    padding: 1px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b6cccd;
+    color: #fff;
+}
+
+
+/* Kiểu cho phần main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b6cccd;
+    color: black;
+}
+
+.customer-review {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-review h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+/* quan li uu dai */
+
+.deal-management {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.deal-management h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.deal {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.deal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.deal-code {
+    flex-basis: 30%;
+}
+
+.deal-code button {
+    margin-top: 10px;
+    background-color: #93c2c7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deal-info {
+    flex-basis: 65%;
+    padding-left: 20px;
+}
+
+
+/* fllow */
+
+.input {
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    /* bóng đổ: ngang dọc độ_mờ kthuoc_bóng */
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    /* đặt tỷ lệ thu nhỏ của phần tử xuống 95% so với kích thước gốc */
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 17px;
+}
+
+.height {
+    padding: 50px 0;
+}
+
+.khung {
+    padding: 40px 20px 0 0;
+}
+
+.khung .box {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+}
